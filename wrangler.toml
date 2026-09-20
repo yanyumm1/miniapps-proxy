@@ -1,0 +1,12 @@
+name = "miniapps-proxy"
+main = "worker.js"
+compatibility_date = "2025-09-01"
+
+# 免费版 10ms CPU 限制足够跑 (fetch 等待不算 CPU)
+
+# [vars]
+# 可选放非敏感变量；敏感配置放 secrets:
+#   wrangler secret put MINIAPPS_COOKIE
+#   wrangler secret put MINIAPPS_TOKEN
+#   wrangler secret put GATEWAY_API_KEY
+#   wrangler secret put MINIAPPS_MODEL_ID
